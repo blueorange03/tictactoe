@@ -359,7 +359,8 @@
         // --- MODIFIED: Delay the computer's move ---
         // 1. Block the board to prevent more clicks
         blocked = 1;
-        vscode.postMessage({ command: 'info', text: 'Computer is thinking...' });
+        vscode.postMessage({ 'waiting for computer' });
+    
         // 2. Schedule the computer's move after 1 sec
         setTimeout(computerMove, 1000);
     }
